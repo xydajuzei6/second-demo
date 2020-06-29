@@ -4,7 +4,7 @@
   padding: 0;
 }
 body {
-  font-size: 16px;
+  font-size: 20px;
   font-family: "微软雅黑";
 }
 h1,
@@ -13,7 +13,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: normal;
 }
 ul,
@@ -31,6 +31,7 @@ strong {
 }
 a,
 u {
+  font-size: 1rem;
   text-decoration: none;
   color: black;
 }

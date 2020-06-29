@@ -4,31 +4,103 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>首页</title>
-    <script>
-      //自适应布局
-      window.onresize = function () {
-        let x = document.body.clientWidth / 19;
-        remStyle = document.createElement("style");
-        document.documentElement.firstElementChild.appendChild(remStyle);
-        remStyle.innerHTML = "html{font-size:" + x + "px;}";
-      };
-    </script>
+    <script src="../js/node_modules/jquery/dist/jquery.js"></script>
+    <script src="../js/zishiying.js"></script>
+    <script src="../js/lunbotu.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/index.js"></script>
     <link rel="stylesheet" href="../css/reset.css" />
-    <link rel="stylesheet" href="../css/commen.css" />
+    <link rel="stylesheet" href="../css/common.css" />
     <link rel="stylesheet" href="../css/index.css" />
-    <style>
-      body,
-      html {
-        font-size: 100px;
-        width: 100%;
-      }
-    </style>
+    <link rel="stylesheet" href="../iconfont/iconfont.css" />
+    <style></style>
   </head>
   <body>
     <header>
-      <div >
-
+      <div class="head-wrap">
+        <div class="head-a float_left">
+          <a
+            href="http://localhost:8383/zuoye/haier/client/index.html"
+            class="head-aa float_left"
+            ><img id="log" src="../images/log.webp" alt=""
+          /></a>
+          <ul class="head-a1 float_left">
+            <li class="head-ali">
+              <a class="head-a1a" href="">智慧家庭</a>
+              <div class="list">
+                <p></p>
+                <a href="">智慧首页</a>
+                <a href="">智家方案</a>
+                <a href="">智慧家电</a>
+                <a href="">生活资讯</a>
+                <a href="">智慧体验店</a>
+              </div>
+            </li>
+            <li>
+              <a class="head-a1a" href="">个人与家用产品</a>
+              <div class="list">
+                <p></p>
+                <a href="">冰箱&nbsp;冷柜</a>
+                <a href="">冰吧&nbsp;冷柜</a>
+                <a href="">洗衣机</a>
+                <a href="">空调</a>
+                <a href="">电视</a>
+                <a href="">热水器</a>
+                <a href="">厨房电器</a>
+                <a href="">电脑及外设</a>
+                <a href="">小家电</a>
+                <div class="list-a"></div>
+              </div>
+            </li>
+            <li>
+              <a class="head-a1a" href="">商业解决方案</a>
+              <div class="list">
+                <p></p>
+                <a href="">中央空调</a>
+                <a href="">商用冷柜</a>
+                <a href="">商用洗涤</a>
+                <a href="">商用电视</a>
+                <a href="">商用电脑</a>
+                <a href="">U-home</a>
+                <a href="">商用净水设备</a>
+                <a href="">商用热泵</a>
+              </div>
+            </li>
+            <li>
+              <a class="head-a1a" href="">购买与服务</a>
+              <div class="list">
+                <p></p>
+                <a href="">产品导购</a>
+                <a href="">产品购买</a>
+                <a href="">服务与支持</a>
+                <a href="">会员尊享</a>
+              </div>
+            </li>
+            <li>
+              <a class="head-a1a" href="">关于海尔</a>
+              <div class="list">
+                <p></p>
+                <a href="">海尔集团</a>
+                <a href="">海尔品牌</a>
+                <a href="">投资者关系</a>
+                <a href="">品牌资讯</a>
+              </div>
+              <figure></figure>
+            </li>
+          </ul>
+        </div>
+        <div class="head-b float_right">
+          <figure class="head-b1">
+            <input class="float_left" type="text" />
+            <a href=""><i class="iconfont float_left">&#xe501;</i></a>
+          </figure>
+          <a href=""><i class="head-i1 iconfont">&#xe514;</i></a>
+          <a href=""><i class="head-i2 iconfont">&#xe614;</i></a>
+        </div>
       </div>
     </header>
+    <div id="banner">
+      <div id="banner-wrap"></div>
+    </div>
   </body>
 </html>

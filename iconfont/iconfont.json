@@ -1,0 +1,44 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "2528550",
+      "name": "用户头像",
+      "font_class": "yonghutouxiang",
+      "unicode": "e614",
+      "unicode_decimal": 58900
+    },
+    {
+      "icon_id": "11949139",
+      "name": "搜索--1",
+      "font_class": "icon-search",
+      "unicode": "e501",
+      "unicode_decimal": 58625
+    },
+    {
+      "icon_id": "14260268",
+      "name": "微信",
+      "font_class": "weixin",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "14814010",
+      "name": "黑圆",
+      "font_class": "heiyuan",
+      "unicode": "e6c3",
+      "unicode_decimal": 59075
+    },
+    {
+      "icon_id": "15022539",
+      "name": "购物车",
+      "font_class": "gouwuche",
+      "unicode": "e514",
+      "unicode_decimal": 58644
+    }
+  ]
+}

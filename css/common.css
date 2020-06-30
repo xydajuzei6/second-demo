@@ -48,6 +48,9 @@ header {
   justify-content: space-around;
   align-items: center;
 }
+.head-i1 {
+  margin: 0 0.5rem;
+}
 .head-b1 {
   width: 10.5rem;
   height: 1.9rem;

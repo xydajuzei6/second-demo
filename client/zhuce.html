@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="../js/node_modules/jquery/dist/jquery.js"></script>
+    <script src="../js/zishiying.js"></script>
+    <script src="../js/captcha.js"></script>
+    <script src="../js/md5.js"></script>
+    <script src="../js/zhuce.js"></script>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/dengluzhucecommon.css" />
+    <link rel="stylesheet" href="../css/zhuce.css" />
+  </head>
+  <body>
+    <header>
+      <div id="header-wrap">
+        <a id="index" href="http://localhost:8383/zuoye/haier/client/index.html"
+          ><img id="log" src="../images/log.webp" alt=""
+        /></a>
+        <span>账号注册</span>
+        <a id="denglu" href="">直接登录</a>
+        <p>我已注册，</p>
+      </div>
+    </header>
+    <main>
+      <div id="main-wrap">
+        <div class="main-title">
+          <h2>一个账号便利享受Haier所有服务</h2>
+        </div>
+        <div class="main-content">
+          <form id="oForm" action="">
+            <figure>
+              <h2>用户名</h2>
+              <input
+                type="text"
+                class="no"
+                placeholder="请设置您的用户名(2~6位字母区分大小写)"
+                id="usernameID"
+              />
+            </figure>
+            <section></section>
+            <figure>
+              <h2>手机号码</h2>
+              <input
+                type="text"
+                class="no"
+                placeholder="请输入您的手机号"
+                id="phoneID"
+              />
+            </figure>
+            <section></section>
+            <figure>
+              <h2>密码</h2>
+              <input
+                type="password"
+                class="no"
+                placeholder="密码长度3-6字符（大小写字母和数字） "
+                id="passwordA"
+              />
+            </figure>
+            <section></section>
+            <figure>
+              <h2>确认密码</h2>
+              <input
+                type="password"
+                class="no"
+                placeholder="请再输入一次密码"
+                id="passwordB"
+              />
+            </figure>
+            <section></section>
+            <div class="yanzhengma">
+              <h2>验证码</h2>
+              <input id="imageCode" class="no" type="text" />
+              <div id="img-code-box">
+                <canvas width="160" height="45" id="captcha"></canvas>
+              </div>
+            </div>
+            <section></section>
+          </form>
+          <input id="zhuce" type="button" value="注册" />
+          <div class="tiaokuan">
+            <input id="zhuce-radio" type="checkbox" />
+            <span>
+              我同意<a href="###">《海尔注册用户服务条款》</a>
+              <a href="###">《法律声明及隐私权政策》</a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div id="footer-wrap">
+        <div class="law">
+          <ul class="law-nav">
+            <a href="###">关于海尔</a>
+            <i>|</i>
+            <a href="###">法律声明</a>
+            <i>|</i>
+            <a href="###">联系我们</a>
+            <i>|</i>
+            <a href="###">帮助中心</a>
+            <i>|</i>
+            <a href="###">海尔门店</a>
+          </ul>
+          <ul class="law-banquan">
+            <a href="###">鲁ICP备09096283</a>
+            <i>|</i>
+            <li>Copyright &copy;2019 海尔集团 版权所有</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

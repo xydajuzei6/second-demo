@@ -145,5 +145,43 @@ $(function () {
       });
     }
   );
-  //监听底部
+  //news板块
+  $(".pp-news").hover(
+    function () {
+      $(this).children("h2,h3").css("color", "rgb(12,94,168)");
+      $(this).children("section").children().css({
+        width: "100%",
+        transition: "0.3s linear",
+      });
+    },
+    function () {
+      $(this).children("h2,h3").css("color", "#111");
+      $(this).children("section").children().css({
+        width: "3rem",
+      });
+    }
+  );
+  //链接板块
+  $(".lj-content")
+    .children("div")
+    .hover(
+      function () {
+        $(this).css("boxShadow", "0.25rem 0.5rem 1rem gray");
+        $(this).children("img").css({
+          width: "120%",
+          height: "120%",
+          margin: "-0.5rem 0 0 -1rem",
+          transition: "0.3s linear",
+        });
+      },
+      function () {
+        $(this).css("boxShadow", "none");
+        $(this).children("img").css({
+          width: "100%",
+          height: "100%",
+          margin: "0",
+        });
+      }
+    );
+  //监听的底部括号
 });

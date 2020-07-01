@@ -1,0 +1,85 @@
+@charset "utf-8";
+footer {
+  width: 100%;
+  height: 2.8rem;
+  background-color: rgb(43, 44, 45);
+  box-sizing: border-box;
+  padding: 1rem;
+}
+#footer-wrap {
+  width: 61.8rem;
+  height: 0.8rem;
+  margin: 0 auto;
+}
+.law {
+  width: 60rem;
+  height: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.law-nav {
+  width: 20rem;
+  height: 0.8rem;
+}
+.law-nav a {
+  font-size: 0.6rem;
+  display: block;
+  width: 3rem;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  float: left;
+  text-align: center;
+  color: rgb(102, 102, 102);
+  overflow: hidden;
+}
+.law-nav a:hover {
+  color: #005aaa;
+}
+.law-nav i {
+  display: block;
+  font-size: 0.6rem;
+  height: 0.8rem;
+  color: rgb(102, 102, 102);
+  line-height: 0.8rem;
+  width: 0.2rem;
+  padding: 0 0.5rem;
+  float: left;
+}
+.law-banquan {
+  width: 20rem;
+  height: 0.8rem;
+}
+.law-banquan a {
+  display: block;
+  width: 6rem;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  text-align: center;
+  color: rgb(102, 102, 102);
+  font-size: 0.6rem;
+  float: left;
+  overflow: hidden;
+}
+.law-banquan a:hover {
+  color: #005aaa;
+}
+.law-banquan i {
+  display: block;
+  font-size: 0.6rem;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  color: rgb(102, 102, 102);
+  width: 0.2rem;
+  padding: 0 0.5rem;
+  float: left;
+}
+.law-banquan li {
+  width: 10.5rem;
+  height: 0.8rem;
+  color: rgb(102, 102, 102);
+  line-height: 0.8rem;
+  font-size: 0.6rem;
+  float: left;
+  overflow: hidden;
+}

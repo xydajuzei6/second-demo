@@ -1,8 +1,4 @@
 $(function () {
-  $("#phoneID").val(13926291888);
-  $("#usernameID").val("zs");
-  $("#passwordA").val(123);
-  $("#passwordB").val(123);
   let imgCode;
   let zhuceAjax = 0;
   /*不传值，统一走默认值*/
@@ -21,7 +17,6 @@ $(function () {
   });
 
   captcha.draw(document.querySelector("#captcha"), (r) => {
-    console.log("验证码", r);
     imgCode = r;
 
     /* 自动触发标签的事件 */
@@ -81,31 +76,38 @@ $(function () {
       $("#zhuce").css("background-color", "#c6cacb");
       zhuceAjax = 0;
     }
-  }, 1000);
+  }, 500);
   //ajax
   $("#zhuce").click(function () {
-    /* [1] 检查表单验证是否全部都通过，如果有一个没有通过那么就return  */
-    $("#phoneID,#usernameID,#passwordA,#passwordB,#imageCode").trigger("blur");
-
     if (zhuceAjax == 0) {
-      console.log(zhuceAjax);
-
       return;
     }
-    console.log("zhuceAjax");
+    /* [1] 检查表单验证是否全部都通过，如果有一个没有通过那么就return  */
+    $("#phoneID,#usernameID,#passwordA,#passwordB,#imageCode").trigger("blur");
 
     let data = {
       username: $.trim($("#usernameID").val()),
       phone: $.trim($("#phoneID").val()),
       password: md5($.trim($("#passwordA").val())).slice(0, 15),
     };
-    console.log("2");
 
     /* [3] 发送网络请求去执行注册 */
-    $.get("../server/zhuce.php", function (data, status, xhr) {
-      console.log(data, status, xhr);
+    $.ajax({
+      url: "../server/zhuce.php",
+      type: "post",
+      data,
+      dataType: "json",
+    }).done(function (data) {
+      console.log("data" + data.status);
+      if (data.status == "success") {
+        alert("注册成功！");
+        window.location.href = "../client/denglu.html";
+      } else if (data.status == "error") {
+        alert(data.msg);
+      } else {
+        alert(data);
+      }
     });
-    console.log("3");
   });
 
   //监听加载底部括号

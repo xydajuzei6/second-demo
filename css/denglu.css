@@ -1,0 +1,192 @@
+@charset "utf-8";
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background: url(../images/vipuser_denglubg3.jpg) no-repeat;
+  position: relative;
+}
+header {
+  width: 100%;
+  height: 3rem;
+  background-color: white;
+}
+#header-wrap {
+  width: 61.8rem;
+  height: 3rem;
+  margin: 0 auto;
+  overflow: hidden;
+}
+#log {
+  display: block;
+  width: 3.6rem;
+  height: 1rem;
+  margin: 1rem 0;
+  float: left;
+}
+#header-wrap span {
+  font-size: 0.8rem;
+  margin: 1rem 0 0 0.9rem;
+  float: left;
+}
+.vipjihuo {
+  font-size: 0.7rem;
+  margin: 1rem 0;
+  color: rgb(153, 153, 153);
+  float: right;
+}
+.vipjihuo:hover {
+  color: #32beff;
+}
+#header-wrap i {
+  font-size: 0.7rem;
+  margin: 1rem;
+  float: right;
+}
+#zhuce {
+  font-size: 0.7rem;
+  color: #32beff;
+  margin: 1rem 0;
+  float: right;
+}
+main {
+  width: 100%;
+  height: 41.1rem;
+}
+#main-wrap {
+  width: 61.8rem;
+  height: 41.1rem;
+  margin: 0 auto;
+  position: relative;
+}
+.main-content {
+  width: 30.9rem;
+  min-height: 22.4rem;
+  position: absolute;
+  right: 0;
+  top: 10rem;
+}
+.main-core {
+  width: 21rem;
+  min-height: 20rem;
+  background-color: white;
+  margin-left: 5rem;
+  color: rgb(153, 153, 153);
+}
+.core-head {
+  width: 21rem;
+  height: 3rem;
+  line-height: 3rem;
+  border-bottom: 1px solid rgb(229, 229, 229);
+  font-size: 0.8rem;
+  box-sizing: border-box;
+  padding-left: 1.5rem;
+}
+.core-a {
+  width: 18rem;
+  height: 3.5rem;
+  margin: 0 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.core-a1 {
+  overflow: hidden;
+  color: rgb(0, 90, 170);
+}
+.core-a1 i {
+  font-size: 2rem;
+  float: left;
+}
+.core-a1 p {
+  font-size: 0.8rem;
+  float: left;
+  margin: 0.8rem 0 0 1rem;
+}
+.core-a2 i {
+  font-size: 2rem;
+  float: left;
+}
+.core-a2 p {
+  width: 4rem;
+  font-size: 0.8rem;
+  float: left;
+}
+.core-a > i {
+  font-size: 2rem;
+}
+.user,
+.password {
+  box-sizing: border-box;
+  width: 18rem;
+  height: 2.5rem;
+  padding: 3px 3px 3px 0;
+  border: 1px solid rgb(214, 219, 221);
+  display: flex;
+  margin-left: 1.5rem;
+}
+.user i {
+  font-size: 1.5rem;
+  margin: 0.25rem 1rem 0 0.25rem;
+}
+#username,
+#userpass {
+  display: block;
+  border: none;
+  width: 15rem;
+}
+.password i {
+  font-size: 1.5rem;
+  margin: 0.25rem 1rem 0 0.25rem;
+}
+#denglu figure {
+  height: 1rem;
+  width: 18rem;
+}
+.core-c {
+  width: 18rem;
+  height: 2rem;
+  margin-left: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+.core-c span {
+  padding-left: 0.6rem;
+  font-size: 0.6rem;
+}
+.core-c a {
+  font-size: 0.6rem;
+  color: #32beff;
+}
+.core-d {
+  width: 18rem;
+  height: 2rem;
+  margin-left: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+.core-d p {
+  font-size: 0.8rem;
+  padding-left: 0.6rem;
+}
+#login {
+  display: block;
+  margin-left: 1.5rem;
+  width: 18rem;
+  height: 2.5rem;
+  border: none;
+  font-size: 0.8rem;
+  background-color: rgb(198, 202, 203);
+}
+.lianjie {
+  margin: 1rem 0 0 5rem;
+  width: 13rem;
+  height: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.lianjie a {
+  font-size: 0.7rem;
+  color: white;
+}

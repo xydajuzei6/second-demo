@@ -12,9 +12,10 @@ main {
 }
 #img-box {
   margin-top: 4rem;
-  width: 25rem;
-  height: 25rem;
+  width: 24rem;
+  height: 24rem;
   float: left;
+  position: relative;
 }
 #goodsImg {
   display: block;
@@ -109,4 +110,27 @@ main {
   height: 0.9rem;
   color: rgb(12, 92, 168);
   padding: 1.3rem 0 0 2rem;
+}
+#mirror-box {
+  position: absolute;
+  left: 10rem;
+  top: 4rem;
+  width: 6rem;
+  height: 6rem;
+  background-color: blue;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+#show-box {
+  background-color: white;
+  position: absolute;
+  left: 30rem;
+  top: 0;
+  width: 24rem;
+  height: 24rem;
+  background-image: url(http://image.haier.com/cn/cooling/W020191118632509043232.png);
+  background-size: 96rem 96rem;
+  background-position: -40rem -16rem;
+  display: none;
 }

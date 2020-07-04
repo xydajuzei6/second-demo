@@ -48,6 +48,13 @@
       "unicode_decimal": 58921
     },
     {
+      "icon_id": "6468148",
+      "name": "信息",
+      "font_class": "xinxi",
+      "unicode": "e61c",
+      "unicode_decimal": 58908
+    },
+    {
       "icon_id": "8927385",
       "name": "第一",
       "font_class": "diyi",

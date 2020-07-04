@@ -38,6 +38,14 @@ $(() => {
       /* 如果 */
       if (data.status == "success") {
         alert(data.msg);
+
+        if ($("#cb2").is(":checked")) {
+          setItem("user", username, 7);
+          setItem(username, password, 7);
+        } else {
+          setItem("user", username);
+          setItem(username, password);
+        }
         /* 跳转 */
         location.href = "http://localhost:8383/zuoye/haier/client/index.html";
       } else {
@@ -45,5 +53,27 @@ $(() => {
       }
     });
   });
+  //cookie函数
+  function getItem(key) {
+    let cookieSting = document.cookie;
+    let cookies = cookieSting.split("; ");
+    for (let i = 0; i < cookies.length; i++) {
+      let currentItem = cookies[i];
+      let temp = currentItem.split("=");
+      if (key === temp[0]) {
+        return temp[1];
+      }
+    }
+  }
+
+  function setItem(key, value, day) {
+    if (typeof day === "number" && day > 0) {
+      let date = new Date();
+      date.setDate(date.getDate() + day);
+      document.cookie = `${key}=${value}; expires=` + date;
+    } else {
+      document.cookie = `${key}=${value}`;
+    }
+  }
   //底部
 });

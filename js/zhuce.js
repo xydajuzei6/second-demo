@@ -90,7 +90,7 @@ $(function () {
       phone: $.trim($("#phoneID").val()),
       password: md5($.trim($("#passwordA").val())).slice(0, 15),
     };
-
+    var cartname = $.trim($("#usernameID").val());
     /* [3] 发送网络请求去执行注册 */
     $.ajax({
       url: "../server/zhuce.php",
@@ -101,7 +101,17 @@ $(function () {
       console.log("data" + data.status);
       if (data.status == "success") {
         alert("注册成功！");
-        window.location.href = "../client/denglu.html";
+        $.ajax({
+          type: "post",
+          url: "../server/createcart.php",
+          data: `cartname=${cartname}`,
+        })
+          .done((data) => {
+            console.log(data);
+          })
+          .done(function () {
+            window.location.href = "../client/denglu.html";
+          });
       } else if (data.status == "error") {
         alert(data.msg);
       } else {

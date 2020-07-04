@@ -24,30 +24,31 @@ $(function () {
   //心选大图鼠标滑过
   $(".xinxuan-content-wrap").hover(
     function () {
-      $(".xinxuan-content-wrap").css({
+      $(this).css({
         borderBottom: "0.4rem solid #005aaa",
         boxShadow: "0 0.5rem 2rem gray",
         zIndex: "1000",
       });
-      $(".xinxuan-content-wrap").children("img").css({
+      $(this).children("img").css({
         display: "block",
         width: "25rem",
         height: "25rem",
-        margin: "0",
+        top: "0",
+        left: "0",
         transition: "0.2s linear",
       });
     },
     function () {
-      $(".xinxuan-content-wrap").css({
+      $(this).css({
         borderBottom: "none",
         boxShadow: "none",
         zIndex: "1",
       });
-      $(".xinxuan-content-wrap").children("img").css({
+      $(this).children("img").css({
         width: "23rem",
         height: "23rem",
-
-        margin: "1rem",
+        top: "1rem",
+        left: "1rem",
       });
     }
   );
@@ -183,5 +184,81 @@ $(function () {
         });
       }
     );
+  //心选轮播
+  $(".xinxuan-click .xinxuan-span").click(function () {
+    console.log($(this).parent().index());
+    let x = $(this).parent().index();
+    $(".xinxuan-box").css("left", `${-x * 60}rem`);
+  });
+  //人气轮播
+
+  $(".renqi-tab .renqi-span").click(function () {
+    let x = $(this).parent().index();
+    console.log(x);
+
+    $.ajax({
+      type: "post",
+      url: "../server/getrenqilist.php",
+      dataType: "json",
+      data: `x=${x}`,
+    }).done((data) => {
+      console.log(1);
+      console.log(data);
+      // $(".renqi-show-box")
+      //   .eq(0)
+      //   .children("img")
+      //   .attr("src", `${data[0].imgSrc}`);
+      // $(".renqi-show-box")
+      //   .eq(0)
+      //   .children("h2")
+      //   .attr("src", `${data[0].goodsname}`);
+      // $(".renqi-show-box")
+      //   .eq(0)
+      //   .children("h3")
+      //   .attr("src", `${data[0].goodsId}`);
+      data.forEach((item, index) => {
+        $(".renqi-show-box")
+          .eq(index)
+          .children("img")
+          .attr("src", `${item.imgSrc}`);
+        $(".renqi-show-box").eq(index).children("h2").html(item.goodsname);
+        $(".renqi-show-box").eq(index).children("h3").html(item.goodsId);
+      });
+    });
+    console.log("123");
+  });
+  //购物车登录验证
+  $("#cart").click(function () {
+    let x = getItem("user");
+    console.log(x);
+    if (x == null) {
+      alert("请先登录");
+      location.href = "http://localhost:8383/zuoye/haier/client/denglu.html";
+    } else {
+      location.href = "http://localhost:8383/zuoye/haier/client/cart.html";
+    }
+  });
+  //cookie
+  function getItem(key) {
+    let cookieSting = document.cookie; // "color=red; id=red2324"
+    let cookies = cookieSting.split("; "); //["color=red","id=red2324"]
+    for (let i = 0; i < cookies.length; i++) {
+      let currentItem = cookies[i]; //"color=red"
+      let temp = currentItem.split("="); //["color","red"];
+      if (key === temp[0]) {
+        return temp[1];
+      }
+    }
+  }
+
+  function setItem(key, value, day) {
+    if (typeof day === "number" && day > 0) {
+      let date = new Date();
+      date.setDate(date.getDate() + day);
+      document.cookie = `${key}=${value}; expires=` + date;
+    } else {
+      document.cookie = `${key}=${value}`;
+    }
+  }
   //监听的底部括号
 });

@@ -3,3 +3,150 @@ main {
   width: 100%;
   min-height: 36rem;
 }
+.main-top {
+  width: 60rem;
+  height: 4rem;
+  margin: 0 auto;
+  background-color: pink;
+  overflow: hidden;
+}
+.quanxuan {
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  margin: 1.5rem 2rem;
+  float: left;
+}
+.main-top > p {
+  width: 6rem;
+  height: 2rem;
+  line-height: 2rem;
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 1rem 0.6rem;
+  float: left;
+}
+.main-top > h2 {
+  width: 6rem;
+  height: 2rem;
+  line-height: 2rem;
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 1rem 6rem;
+  float: left;
+}
+.main-top > h3 {
+  width: 6rem;
+  height: 2rem;
+  line-height: 2rem;
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 1rem 1.8rem;
+  float: left;
+}
+.main-top > h4 {
+  width: 6rem;
+  height: 2rem;
+  line-height: 2rem;
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 1rem 0.6rem 1rem 6.3rem;
+  float: left;
+}
+.main-top > h5 {
+  width: 4rem;
+  height: 2rem;
+  line-height: 2rem;
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 1rem 0.6rem;
+  float: left;
+}
+#main-wrap {
+  width: 60rem;
+  min-height: 36rem;
+  margin: 0 auto;
+  overflow: hidden;
+  overflow: hidden;
+}
+.show-box {
+  width: 59rem;
+  margin: 1rem 0.5rem 1rem;
+  height: 7rem;
+  overflow: hidden;
+  box-shadow: 0 0.25rem 0.5rem gray;
+}
+.cb1 {
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  margin: 3rem 2rem;
+  float: left;
+}
+.show-img {
+  display: block;
+  width: 7rem;
+  height: 7rem;
+  float: left;
+}
+.goodsname {
+  width: 16rem;
+  height: 2rem;
+  line-height: 2rem;
+  font-size: 1rem;
+  text-align: center;
+  float: left;
+  margin: 2.5rem 1rem;
+}
+.goodsprice {
+  width: 5rem;
+  height: 2rem;
+  line-height: 2rem;
+  font-size: 1.2rem;
+  float: left;
+  margin: 2.5rem;
+}
+.anniu {
+  width: 4rem;
+  height: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  float: left;
+  margin: 3rem 0;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+.jian {
+  box-sizing: border-box;
+  border: 1px solid black;
+  width: 1rem;
+  height: 1rem;
+  font-size: 0.8rem;
+  line-height: 1rem;
+  text-align: centers;
+}
+.jia {
+  box-sizing: border-box;
+  border: 1px solid black;
+  width: 1rem;
+  height: 1rem;
+  font-size: 0.8rem;
+  line-height: 1rem;
+  text-align: centers;
+}
+.zongjia {
+  width: 5rem;
+  height: 2rem;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  margin: 2.5rem;
+  float: left;
+}
+.cb2 {
+  display: block;
+  width: 3rem;
+  height: 1rem;
+  margin: 3rem 0;
+  float: left;
+}

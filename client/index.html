@@ -50,7 +50,9 @@
               <a class="head-a1a" href="">个人与家用产品</a>
               <div class="list">
                 <p></p>
-                <a href="">冰箱&nbsp;冷柜</a>
+                <a href="http://localhost:8383/zuoye/haier/client/list.html"
+                  >冰箱&nbsp;冷柜</a
+                >
                 <a href="">冰吧&nbsp;冷柜</a>
                 <a href="">洗衣机</a>
                 <a href="">空调</a>
@@ -103,7 +105,7 @@
             <input class="float_left" type="text" />
             <a href=""><i class="iconfont float_left">&#xe501;</i></a>
           </figure>
-          <a href="http://localhost:8383/zuoye/haier/client/cart.html"
+          <a id="cart" href="javascript:void(0);"
             ><i class="head-i1 iconfont">&#xe514;</i></a
           >
           <a href="http://localhost:8383/zuoye/haier/client/denglu.html"
@@ -119,59 +121,280 @@
       <div id="xinxuan-wrap">
         <div class="xinxuan-title">心选精品</div>
         <div class="xinxuan-tab">
-          <ul>
-            <li><span>智慧家电</span></li>
-            <li><span>健康抑菌</span></li>
-            <li><span>人气爆款</span></li>
-            <li><span>颜值控</span></li>
-            <li><span>黑科技</span></li>
-            <li><span>成套臻选</span></li>
+          <ul class="xinxuan-click">
+            <li><span class="xinxuan-span">智慧家电</span></li>
+            <li><span class="xinxuan-span">健康抑菌</span></li>
+            <li><span class="xinxuan-span">人气爆款</span></li>
+            <li><span class="xinxuan-span">颜值控</span></li>
+            <li><span class="xinxuan-span">黑科技</span></li>
+            <li><span class="xinxuan-span">成套臻选</span></li>
           </ul>
         </div>
         <div class="xinxuan-show">
           <div class="xinxuan-content">
-            <div class="xinxuan-content-wrap">
-              <img
-                src="https://image.haier.com/cn/W020200623602816344690.jpg"
-                alt=""
-              />
-              <h2>451升风冷变频对开门冰箱</h2>
-              <h3>BCD-451WDIYU1</h3>
-            </div>
-            <div class="xinxuan-content-s">
-              <div class="xxcs">
+            <!-- 盒子头 -->
+            <ul class="xinxuan-box">
+              <div class="xinxuan-content-wrap">
+                <img
+                  src="https://image.haier.com/cn/W020200623602816344690.jpg"
+                  alt=""
+                />
+                <h2>451升风冷变频对开门冰箱</h2>
+                <h3>BCD-451WDIYU1</h3>
+              </div>
+              <div class="xinxuan-content-s">
+                <div class="xxcs">
+                  <img
+                    src="https://image.haier.com/cn/W020191118557625967449_200.png"
+                    alt=""
+                  />
+                  <h2>10公斤水晶变频洗烘一体机</h2>
+                  <h3>EG10014HBD979U1</h3>
+                </div>
+                <div class="xxcs">
+                  <img
+                    src="https://image.haier.com/cn/W020191224562797978844_200.png"
+                    alt=""
+                  />
+                  <h2>80升即速洗横式电热水器</h2>
+                  <h3>EC8005-MK3(U1)</h3>
+                </div>
+                <div class="xxcs">
+                  <img
+                    src="https://image.haier.com/cn/W020191220370559481246_200.png"
+                    alt=""
+                  />
+                  <h2>海尔65英寸智能电视</h2>
+                  <h3>LU65H81</h3>
+                </div>
+                <div class="xxcs">
+                  <img
+                    src="https://image.haier.com/cn/W020200106559044470167_200.png"
+                    alt=""
+                  />
+                  <h2>TB35扫地机器人</h2>
+                  <h3>TB35</h3>
+                </div>
+              </div>
+              <!-- 1 -->
+              <div class="xinxuan-content-wrap">
+                <img
+                  src="https://image.haier.com/cn/W020200623602817014492.jpg"
+                  alt=""
+                />
+                <h2>致樽 2匹柜式变频空调</h2>
+                <h3>KFR-50LW/07UDP21AU1</h3>
+              </div>
+              <div class="xinxuan-content-s">
+                <div class="xxcs">
+                  <img
+                    src="https://image.haier.com/cn/W020191205490427364792_200.png"
+                    alt=""
+                  />
+                  <h2>净界 1.5匹壁挂式变频空调</h2>
+                  <h3>KFR-35GW/A3RBC21AU1</h3>
+                </div>
+                <div class="xxcs">
+                  <img
+                    src="https://image.haier.com/cn/W020191218367700432787_200.png"
+                    alt=""
+                  />
+                  <h2>100L嵌入式光波巴氏消毒柜</h2>
+                  <h3>ZQD100F-E60S3</h3>
+                </div>
+                <div class="xxcs">
+                  <img
+                    src="https://image.haier.com/cn/W020191224395209887114_200.png"
+                    alt=""
+                  />
+                  <h2>60升变容速热横式电热水器</h2>
+                  <h3>EC6003-MT1</h3>
+                </div>
+                <div class="xxcs">
+                  <img
+                    src="https://image.haier.com/cn/W020191118551852576887_200.png"
+                    alt=""
+                  />
+                  <h2>10公斤纤禧滚筒洗衣机</h2>
+                  <h3>XQG100-B12926</h3>
+                </div>
+              </div>
+              <!-- 2 -->
+              <div class="xinxuan-content-wrap">
+                <img
+                  src="https://image.haier.com/cn/cooling/W020190917778130428065_580.png"
+                  alt=""
+                />
+                <h2>251升风冷变频三门冰箱</h2>
+                <h3>BCD-251WDPTU1</h3>
+              </div>
+              <div class="xinxuan-content-s">
+                <div class="xxcs">
+                  <img
+                    src="https://image.haier.com/cn/freezer/W020191230544516915964_200.png"
+                    alt=""
+                  />
+                  <h2>228升立式冷藏冷冻转换柜</h2>
+                  <h3>BD-228WL</h3>
+                </div>
+                <div class="xxcs">
+                  <img
+                    src="https://image.haier.com/cn/ice_bar/W020191114605929521911_200.png"
+                    alt=""
+                  />
+                  <h2>102升多功能保鲜时尚冰吧</h2>
+                  <h3>LC-102DC</h3>
+                </div>
+                <div class="xxcs">
+                  <img
+                    src="https://image.haier.com/cn/xjd/transmitter/W020200103531482525992_200.png"
+                    alt=""
+                  />
+                  <h2>KJ320F-EAA空气净化器</h2>
+                  <h3>KJ320F-EAA</h3>
+                </div>
+                <div class="xxcs">
+                  <img
+                    src="https://image.haier.com/cn/kitchen_appliances/xyyj/W020191216495139509486_200.png"
+                    alt=""
+                  />
+                  <h2>自净芯系列三速电子触摸按键吸油烟机</h2>
+                  <h3>CXW-200-E800C6T</h3>
+                </div>
+              </div>
+              <!-- 3 -->
+              <div class="xinxuan-content-wrap">
+                <img
+                  src="https://image.haier.com/cn/cooling/W020190917752397655647_580.png"
+                  alt=""
+                />
+                <h2>530升风冷变频对开门冰箱</h2>
+                <h3>BCD-530WDVL</h3>
+              </div>
+              <div class="xinxuan-content-s">
+                <div class="xxcs">
+                  <img
+                    src="https://image.haier.com/cn/water_heaters/drsq/W020191224477032769450_200.png"
+                    alt=""
+                  />
+                  <h2>80升瞬热式防电墙横式电热水器</h2>
+                  <h3>ES80H-PLUS9(U1)</h3>
+                </div>
+                <div class="xxcs">
+                  <img
+                    src="https://image.haier.com/cn/televisions/W020191219511624743086_200.png"
+                    alt=""
+                  />
+                  <h2>海尔49英寸智能电视</h2>
+                  <h3>LE49H610G</h3>
+                </div>
+                <div class="xxcs">
+                  <img
+                    src="https://image.haier.com/cn/laundry/W020191120346099491970_200.png"
+                    alt=""
+                  />
+                  <h2>9公斤海尔变频滚筒洗衣机</h2>
+                  <h3>XQG90-B12936</h3>
+                </div>
+                <div class="xxcs">
+                  <img
+                    src="https://image.haier.com/cn/kitchen_appliances/xyyj/W020191217527726172254_200.png"
+                    alt=""
+                  />
+                  <h2>灵动系列二速电子触摸按键吸油烟机</h2>
+                  <h3>CXW-219-E900C10</h3>
+                </div>
+              </div>
+              <!-- 4 -->
+              <div class="xinxuan-content-wrap">
+                <img
+                  src="https://image.haier.com/cn/cooling/W020191114372984448951_580.png"
+                  alt=""
+                />
+                <h2>541升风冷变频对开门冰箱</h2>
+                <h3>BCD-541WDPJ</h3>
+              </div>
+              <div class="xinxuan-content-s">
+                <div class="xxcs">
+                  <img
+                    src="https://image.haier.com/cn/water_heaters/drsq/W020191224514822000263_200.png"
+                    alt=""
+                  />
+                  <h2>60升智能云控制横式电热水器</h2>
+                  <h3>EC6005-ST5</h3>
+                </div>
+                <div class="xxcs">
+                  <img
+                    src="https://image.haier.com/cn/televisions/W020200117524765415671_200.png"
+                    alt=""
+                  />
+                  <h2>海尔55英寸高清智能电视</h2>
+                  <h3>LU55D31J</h3>
+                </div>
+                <div class="xxcs">
+                  <img
+                    src="https://image.haier.com/cn/laundry/W020191118556835532008_200.png"
+                    alt=""
+                  />
+                  <h2>10公斤水晶滚筒洗烘一体机</h2>
+                  <h3>EG10014HBD959GU1</h3>
+                </div>
+                <div class="xxcs">
+                  <img
+                    src="https://image.haier.com/cn/kitchen_appliances/xyyj/W020191216554526251015_200.png"
+                    alt=""
+                  />
+                  <h2>自净芯系列三速电子-触摸按键吸油烟机</h2>
+                  <h3>CXW-219-E900C13</h3>
+                </div>
+              </div>
+              <!-- 5
+               -->
+              <div class="xinxuan-content-wrap">
                 <img
                   src="https://image.haier.com/cn/W020191118557625967449_200.png"
                   alt=""
                 />
-                <h2>10公斤水晶变频洗烘一体机</h2>
-                <h3>EG10014HBD979U1</h3>
+                <h2>520升风冷变频对开门冰箱</h2>
+                <h3>BCD-520WDPD</h3>
               </div>
-              <div class="xxcs">
-                <img
-                  src="https://image.haier.com/cn/W020191224562797978844_200.png"
-                  alt=""
-                />
-                <h2>80升即速洗横式电热水器</h2>
-                <h3>EC8005-MK3(U1)</h3>
+              <div class="xinxuan-content-s">
+                <div class="xxcs">
+                  <img
+                    src="https://image.haier.com/cn/W020191220358832476973_200.png"
+                    alt=""
+                  />
+                  <h2>海尔65英寸智能电视</h2>
+                  <h3>LU65C51</h3>
+                </div>
+                <div class="xxcs">
+                  <img
+                    src="https://image.haier.com/cn/W020191120364065892035_200.png"
+                    alt=""
+                  />
+                  <h2>9公斤纤禧滚筒洗烘一体机</h2>
+                  <h3>XQG90-HB12926</h3>
+                </div>
+                <div class="xxcs">
+                  <img
+                    src="https://image.haier.com/cn/W020190915839234074591_200.png"
+                    alt=""
+                  />
+                  <h2>劲铂 1.5匹壁挂式变频空调</h2>
+                  <h3>KFR-35GW/03DIB81A</h3>
+                </div>
+                <div class="xxcs">
+                  <img
+                    src="https://image.haier.com/cn/W020200327632086813440_200.png"
+                    alt=""
+                  />
+                  <h2>51瓶双温区酒柜</h2>
+                  <h3>WS051S</h3>
+                </div>
               </div>
-              <div class="xxcs">
-                <img
-                  src="https://image.haier.com/cn/W020191220370559481246_200.png"
-                  alt=""
-                />
-                <h2>海尔65英寸智能电视</h2>
-                <h3>LU65H81</h3>
-              </div>
-              <div class="xxcs">
-                <img
-                  src="https://image.haier.com/cn/W020200106559044470167_200.png"
-                  alt=""
-                />
-                <h2>TB35扫地机器人</h2>
-                <h3>TB35</h3>
-              </div>
-            </div>
+              <!-- 6 -->
+            </ul>
+            <!-- 盒子尾巴 -->
           </div>
           <section class="xinxuan-show-bg"></section>
         </div>
@@ -183,13 +406,13 @@
         <div class="renqi-title">人气排行榜</div>
         <div class="renqi-tab">
           <ul>
-            <li><span>冰箱</span></li>
-            <li><span>洗衣机</span></li>
-            <li><span>空调</span></li>
-            <li><span>热水器</span></li>
-            <li><span>电视</span></li>
-            <li><span>油烟机</span></li>
-            <li><span>燃气灶</span></li>
+            <li><span class="renqi-span">冰箱</span></li>
+            <li><span class="renqi-span">洗衣机</span></li>
+            <li><span class="renqi-span">空调</span></li>
+            <li><span class="renqi-span">热水器</span></li>
+            <li><span class="renqi-span">电视</span></li>
+            <li><span class="renqi-span">油烟机</span></li>
+            <li><span class="renqi-span">燃气灶</span></li>
           </ul>
         </div>
         <div class="renqi-show">

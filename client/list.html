@@ -7,12 +7,13 @@
     <title>Document</title>
     <script src="../js/node_modules/jquery/dist/jquery.js"></script>
     <script src="../js/zishiying.js"></script>
-    <script src="../js/cart.js"></script>
+    <script src="../js/list.js"></script>
     <script src="../js/common.js"></script>
     <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/common.css" />
     <link rel="stylesheet" href="../iconfont/iconfont.css" />
-    <link rel="stylesheet" href="../css/cart.css" />
+    <link rel="stylesheet" href="../css/list.css" />
+    <link rel="stylesheet" href="../iconfont/iconfont.css" />
   </head>
   <body>
     <header>
@@ -101,33 +102,40 @@
         </div>
       </div>
     </header>
-    <main>
-      <div class="main-top">
-        <input class="quanxuan" type="checkbox" />
-        <p>商品图品</p>
-        <h2>商品名称</h2>
-        <h3>商品价格</h3>
-        <h4>小计</h4>
-        <h5>操作</h5>
+    <div id="banner">
+      <div id="banner-wrap">
+        <img
+          class="banner-img"
+          src="https://image.haier.com/cn/ice_bar/W020190917620903005680.png"
+          alt=""
+        />
+        <div class="banner-content">
+          <h2></h2>
+          <h3>家电购买攻略大曝光</h3>
+          <h4>专治家电选择困难症</h4>
+        </div>
       </div>
+    </div>
+    <main>
       <div id="main-wrap">
-        <li class="show-box">
-          <input class="cb1" type="checkbox" />
-          <img
-            class="show-img"
-            src="//image.haier.com/cn/cooling/W020190917795704366951_350.png"
-            alt=""
-          />
-          <h2 class="goodsname">507升风冷变频对开门冰箱</h2>
-          <h3 class="goodsprice">￥99999</h3>
-          <div class="anniu">
-            <input class="jian" type="button" value="-" />
-            <span class="goodsNum">56</span>
-            <input class="jia" type="button" value="+" />
-          </div>
-          <h4 class="zongjia">￥99998</h4>
-          <input class="cb2" type="button" value="删除" />
-        </li>
+        <ul id="show-list">
+          <li class="show-li">
+            <img
+              class="imgSrc"
+              src="https://image.haier.com/cn/cooling/W020190917752397655647_350.png"
+              alt=""
+            />
+            <h2 class="goodsname">530升风冷变频对开门冰箱</h2>
+            <h3 class="goodsId">BCD-530WDVL</h3>
+            <p class="jiage">参考价：<b class="goodsPrice">￥4099</b></p>
+            <p class="mai">
+              <i class="jiadian">1</i>
+              家电商在售
+              <i class="iconfont">&#xe61c;</i>
+              <i class="pingjia">368</i>
+            </p>
+          </li>
+        </ul>
       </div>
     </main>
     <footer>
